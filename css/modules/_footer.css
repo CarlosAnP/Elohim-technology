@@ -1,0 +1,9 @@
+/* --- Módulo: Pie de Página --- */
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}

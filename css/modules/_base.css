@@ -1,0 +1,38 @@
+/* --- Módulo: Estilos Base y Globales --- */
+
+/* Estilos base del cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    background-color: hsl(0, 0%, 96%); /* Fondo claro para contraste */
+}
+
+/* Estilo general para enlaces */
+a {
+    color: #00bcd4; /* Color de acento */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0097a7; /* Acento más oscuro al pasar el mouse */
+}
+
+/* Clase de utilidad para centrar contenido */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo general para los títulos de sección */
+section h2 {
+    font-size: 2.5rem;
+    color: #1a2c42; /* Azul oscuro del header */
+    margin-bottom: 40px;
+    text-align: center;
+}

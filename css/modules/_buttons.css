@@ -1,0 +1,35 @@
+/* --- Módulo: Estilos de Botones --- */
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Asegura que no haya subrayado */
+}
+
+.btn-primary {
+    background-color: #00bcd4; /* Azul acento */
+    color: #fff;
+    border: 2px solid #00bcd4;
+}
+
+.btn-primary:hover {
+    background-color: #0097a7;
+    border-color: #0097a7;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #1a2c42; /* Azul oscuro del header */
+    border: 2px solid #1a2c42;
+}
+
+.btn-secondary:hover {
+    background-color: #1a2c42;
+    color: #fff;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,88 @@
+/* --- Módulo: Secciones de Contenido --- */
+
+#nuestros-servicios-resumen, #why-choose-us, #cta {
+    padding: 60px 20px;
+    max-width: 1200px; /* Se aplica el ancho máximo solo a estas secciones */
+    margin: 0 auto;    /* Y se centran */
+}
+
+/* Sección "Nuestros Servicios" */
+#nuestros-servicios-resumen .servicios-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.servicio-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.servicio-card h3 {
+    color: #1a2c42;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.servicio-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.servicio-card a {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.servicio-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Sección "Por qué elegirnos" */
+#why-choose-us {
+    background-color: #e6f7f9; /* Fondo de acento claro */
+}
+
+#why-choose-us .features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.feature-item h3 {
+    color: #00bcd4; /* Color de acento para los títulos */
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Sección de Llamado a la Acción (CTA) */
+#cta {
+    background-color: #1a2c42; /* Fondo azul oscuro */
+}
+
+#cta h2 {
+    color: #fff;
+    font-size: 2.8rem;
+    margin-top: 0;
+}
