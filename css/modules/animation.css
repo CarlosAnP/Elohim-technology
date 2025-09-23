@@ -4,7 +4,7 @@
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(50px); /* Empieza 50px abajo */
+        transform: translateY(100px); /* Empieza 50px abajo */
     }
     to {
         opacity: 1;
