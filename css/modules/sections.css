@@ -140,30 +140,6 @@
     to { transform: translateX(calc(-50% - 15px)); } /* Se desplaza la mitad del track + un margen */
 }
 
-/* Media Queries para la galería */
-@media (max-width: 768px) {
-    .gallery-item {
-        width: 250px;
-        margin: 0 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .gallery-track {
-        display: grid; /* Usamos Grid para un control fácil */
-        grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-        gap: 15px; /* Espacio entre las imágenes */
-        animation: none; /* Mantenemos la animación de scroll desactivada */
-        width: 100%;
-        transform: none; /* Reseteamos cualquier transformación */
-    }
-
-    .gallery-item {
-        width: 100%; /* El ítem ocupa todo el espacio de su celda */
-        margin: 0; /* Reseteamos el margen */
-        display: block; /* Mantenemos el display por si acaso */
-    }
-}
 
 
 /* Sección "Por qué elegirnos" */
