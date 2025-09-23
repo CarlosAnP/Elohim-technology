@@ -1,10 +1,11 @@
 /* --- CSS Principal --- */
 /* Este archivo importa todos los módulos de estilo del sitio. */
 
-@import url('modules/_base.css');
-@import url('modules/_header.css');
-@import url('modules/_buttons.css');
+@import url('modules/base.css');
+@import url('modules/header.css');
+@import url('modules/buttons.css');
 @import url('modules/carousel.css');
-@import url('modules/_sections.css');
-@import url('modules/_footer.css');
-@import url('modules/_responsive.css');
+@import url('modules/sections.css');
+@import url('modules/footer.css');
+@import url('modules/responsive.css');
+@import url('modules/animation.css');

@@ -87,4 +87,33 @@ document.addEventListener('DOMContentLoaded', function() {
     // Iniciar el carrusel
     moveToSlide(0);
 
+        const animatedItems = document.querySelectorAll('.animated-item');
+
+    // Callback para el Intersection Observer
+    function animateOnScroll(entries, observer) {
+        entries.forEach(entry => {
+            // Si el elemento es visible en el viewport
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // Dejar de observar el elemento una vez que ya se animó
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Opciones para el Intersection Observer
+    const observerOptions = {
+        root: null, // El viewport es el elemento raíz
+        rootMargin: '0px', // Sin margen extra
+        threshold: 0.2 // El 20% del elemento debe ser visible para disparar la animación
+    };
+
+    // Crear el Intersection Observer
+    const observer = new IntersectionObserver(animateOnScroll, observerOptions);
+
+    // Observar cada elemento animado
+    animatedItems.forEach(item => {
+        observer.observe(item);
+    });
+
 });
